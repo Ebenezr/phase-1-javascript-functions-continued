@@ -6,7 +6,7 @@ const mondayWork = function (event = 'go to the office'){
 
     return `This Monday, I will ${event}.`
 }
-const wrapAdjective = function (event ="*"){
+const wrapAdjective = (event ="*") => {
     return function (type = 'a dedicated programmer'){
         return `You are ${event}${type}${event}!`
     }
